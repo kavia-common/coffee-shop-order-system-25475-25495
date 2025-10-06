@@ -29,41 +29,63 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <header className="App-header">
-          <button
-            className="theme-toggle"
-            onClick={toggleTheme}
-            aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-          >
-            {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
-          </button>
-
-          {/* Simple nav to make Product Feedback discoverable */}
-          <nav style={{ position: 'absolute', top: 20, left: 20 }}>
-            <Link className="App-link" to="/product-feedback">Go to Product Feedback</Link>
-          </nav>
-
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <p>
-            Current theme: <strong>{theme}</strong>
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-
-        {/* Routes */}
         <Routes>
-          <Route path="/" element={<div />} />
-          <Route path="/product-feedback" element={<ProductFeedback />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <header className="App-header">
+                  <button
+                    className="theme-toggle"
+                    onClick={toggleTheme}
+                    aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+                  >
+                    {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
+                  </button>
+
+                  {/* Simple nav to make Product Feedback discoverable */}
+                  <nav style={{ position: 'absolute', top: 20, left: 20 }}>
+                    <Link className="App-link" to="/product-feedback">Go to Product Feedback</Link>
+                  </nav>
+
+                  <img src={logo} className="App-logo" alt="logo" />
+                  <p>
+                    Edit <code>src/App.js</code> and save to reload.
+                  </p>
+                  <p>
+                    Current theme: <strong>{theme}</strong>
+                  </p>
+                  <a
+                    className="App-link"
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Learn React
+                  </a>
+                </header>
+              </>
+            }
+          />
+          <Route
+            path="/product-feedback"
+            element={
+              // Full-bleed container without the default header
+              <div
+                style={{
+                  minHeight: '100vh',
+                  overflowX: 'auto',
+                  overflowY: 'auto',
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                  justifyContent: 'flex-start',
+                  background: 'var(--bg-primary, #ffffff)',
+                }}
+              >
+                <ProductFeedback />
+              </div>
+            }
+          />
         </Routes>
       </div>
     </BrowserRouter>
