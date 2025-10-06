@@ -11,6 +11,7 @@ import {
 } from 'react-router-dom';
 
 import ProductFeedback from './pages/ProductFeedback';
+import Color from './pages/Color';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -43,9 +44,10 @@ function App() {
                     {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
                   </button>
 
-                  {/* Simple nav to make Product Feedback discoverable */}
-                  <nav style={{ position: 'absolute', top: 20, left: 20 }}>
-                    <Link className="App-link" to="/product-feedback">Go to Product Feedback</Link>
+                  {/* Simple nav to make screens discoverable */}
+                  <nav style={{ position: 'absolute', top: 20, left: 20, display: 'flex', gap: 12 }}>
+                    <Link className="App-link" to="/product-feedback">Product Feedback</Link>
+                    <Link className="App-link" to="/color">Color</Link>
                   </nav>
 
                   <img src={logo} className="App-logo" alt="logo" />
@@ -83,6 +85,25 @@ function App() {
                 }}
               >
                 <ProductFeedback />
+              </div>
+            }
+          />
+          <Route
+            path="/color"
+            element={
+              // Full-bleed container without the default header
+              <div
+                style={{
+                  minHeight: '100vh',
+                  overflowX: 'auto',
+                  overflowY: 'auto',
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                  justifyContent: 'flex-start',
+                  background: 'var(--bg-primary, #ffffff)',
+                }}
+              >
+                <Color />
               </div>
             }
           />

@@ -1,0 +1,254 @@
+:root {
+  /* Colors from design system used by this screen */
+  --color-ffffff: #ffffff;
+  --color-c67c4e: #c67c4e;
+  --color-f6ebe4: #f6ebe4;
+  --color-242424: #242424;
+  --color-f9f2ed: #f9f2ed;
+  --color-e3e3e3: #e3e3e3;
+  --color-313131: #313131;
+  --color-edd6c8: #edd6c8;
+  --color-000d09: #000d09;
+  --color-797979: #797979;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-ffffff);
+}
+
+.screen {
+  position: relative;
+  width: 1333px;
+  height: 990px;
+  background: var(--color-ffffff); /* style_5 background */
+  overflow: hidden;
+  font-family: 'Plus Jakarta Sans', 'Urbanist', 'Sora', 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--color-242424);
+}
+
+/* Global helpers */
+.container { position: absolute; display: block; }
+.text { display: inline-block; white-space: pre-wrap; }
+.rectangle { position: absolute; }
+.icon { position: absolute; display: block; }
+
+/* Typography (resolved from design system) */
+.typo-51 { /* Plus Jakarta Sans 32/600 left color 242424 */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-242424);
+}
+.typo-53 { /* Plus Jakarta Sans 48/700 left color 242424 */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-242424);
+}
+.typo-54 { /* Urbanist 18/400 left color 242424 */
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-242424);
+}
+.typo-56 { /* Sora 32/600 left color 242424 */
+  font-family: 'Sora', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-242424);
+}
+.typo-57 { /* Sora 18/400 lh 36 color 797979 */
+  font-family: 'Sora', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.54px;
+  text-align: left;
+  color: var(--color-797979);
+}
+.typo-58 { /* Plus Jakarta Sans 76/700 left color 242424 */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 91.2px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-242424);
+}
+.typo-59 { /* Inter 135/900 left color f6ebe4 */
+  font-family: 'Inter', sans-serif;
+  font-size: 135px;
+  font-weight: 900;
+  line-height: 121.5px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-f6ebe4);
+}
+
+/* Top stripe (style_1 background color_c67c4e) */
+#node-417-606.stripe {
+  left: 0px;   /* 1389 - 1389 */
+  top: 0px;    /* 0 - 0 */
+  width: 1333px;
+  height: 8px;
+  background: var(--color-c67c4e);
+}
+
+/* Studio Name frame */
+#node-444-24.studio-name {
+  left: 112px; /* 1501 - 1389 */
+  top: 99px;   /* 99 - 0 */
+  width: 1109px;
+  height: 24px;
+}
+#node-444-25.text-group {
+  left: 0px; top: 0px; width: 170px; height: 24px;
+}
+#node-444-26 {
+  left: 0px; top: 1px; width: 96px; height: 22px;
+}
+#node-444-27.arrow-right {
+  left: 100px; top: 0px; width: 24px; height: 24px;
+  background: var(--color-ffffff); /* style_5 */
+  border-radius: 0;
+}
+#node-444-28 {
+  left: 6px;
+  top: 5.996px;
+  width: 11.995px;
+  height: 12.01px;
+}
+#node-444-29 {
+  left: 128px; top: 1px; width: 42px; height: 22px;
+}
+#node-444-30 {
+  position: absolute;
+  right: 0px; top: 1px; width: 104px; height: 22px;
+}
+
+/* Number group */
+#node-417-595.number {
+  left: 996px; /* 2385 - 1389 */
+  top: 167px;
+  width: 225px;
+  height: 121px;
+}
+#node-417-596 { /* "03" big background typography color */
+  left: 0px; top: 0px; width: 194px; height: 121px;
+}
+#node-417-597 { /* "Color" label */
+  left: 95px; /* 2480 - 2385 */
+  top: 32px;  /* 199 - 167 */
+  width: 130px; height: 58px;
+}
+
+/* Title group */
+#node-417-590.title {
+  left: 112px; /* 1501 - 1389 */
+  top: 308px;
+  width: 1109px;
+  height: 54px;
+}
+#node-417-591 { /* "Color Guide" */
+  left: 0px; top: 0px; width: 186px; height: 32px;
+}
+#node-417-592.line {
+  left: 0px; top: 48px; width: 1109px; height: 6px;
+}
+#node-417-593 { /* inactive line style_8 */
+  left: 343px; /* 1844 - 1501 */
+  top: 0px; width: 766px; height: 6px;
+  background: var(--color-f6ebe4);
+  border-radius: 4px;
+}
+#node-417-594 { /* active line style_9 */
+  left: 0px; top: 0px; width: 344px; height: 6px;
+  background: var(--color-c67c4e);
+  border-radius: 4px;
+}
+
+/* Section label "Colors" */
+#node-417-588.section-colors {
+  left: 112px; /* 1501 - 1389 */
+  top: 434px;
+  width: 244px;
+  height: 91px;
+}
+#node-417-589 {
+  left: 0px; top: 0px; width: 244px; height: 91px;
+}
+
+/* Shadows */
+.shadow {
+  background: var(--color-000d09);
+  opacity: 0.12;
+  border-radius: 32px;
+}
+#node-417-558 { left: 1048px; top: 748px; width: 148px; height: 116px; }
+#node-417-564 { left: 820px;  top: 748px; width: 148px; height: 116px; }
+#node-417-570 { left: 592px;  top: 748px; width: 148px; height: 116px; }
+#node-417-576 { left: 364px;  top: 748px; width: 148px; height: 116px; }
+#node-417-582 { left: 136px;  top: 748px; width: 148px; height: 116px; }
+
+/* Color cards */
+.color-card {
+  position: absolute;
+  width: 196px;
+  height: 271px;
+  background: var(--color-ffffff);
+  border-radius: 12px;
+}
+#node-417-559 { left: 1024px; top: 589px; }
+#node-417-565 { left: 796px;  top: 589px; }
+#node-417-571 { left: 568px;  top: 589px; }
+#node-417-577 { left: 340px;  top: 589px; }
+#node-417-583 { left: 112px;  top: 589px; }
+
+/* Swatches */
+#node-417-560.swatch { left: 0px; top: 0px; width: 196px; height: 159px; background: var(--color-f9f2ed); border-radius: 12px 12px 0 0; }
+#node-417-566.swatch { left: 0px; top: 0px; width: 196px; height: 159px; background: var(--color-e3e3e3); border-radius: 12px 12px 0 0; }
+#node-417-572.swatch { left: 0px; top: 0px; width: 196px; height: 159px; background: var(--color-313131); border-radius: 12px 12px 0 0; }
+#node-417-578.swatch { left: 0px; top: 0px; width: 196px; height: 159px; background: var(--color-edd6c8); border-radius: 12px 12px 0 0; }
+#node-417-584.swatch { left: 0px; top: 0px; width: 196px; height: 159px; background: var(--color-c67c4e); border-radius: 12px 12px 0 0; }
+
+/* Variable stacks */
+.variable { position: absolute; left: 20px; top: 179px; }
+#node-417-561 { left: 20px; top: 179px; width: 84px; height: 72px; }
+#node-417-567 { left: 20px; top: 179px; width: 82px; height: 72px; }
+#node-417-573 { left: 20px; top: 179px; width: 72px; height: 72px; }
+#node-417-579 { left: 20px; top: 179px; width: 93px; height: 72px; }
+#node-417-585 { left: 20px; top: 179px; width: 89px; height: 72px; }
+
+#node-417-562, #node-417-568, #node-417-574, #node-417-580, #node-417-586 { left: 0px; top: 0px; }
+#node-417-563, #node-417-569, #node-417-575, #node-417-581, #node-417-587 { left: 0px; top: 36px; }
+
+/* Z-index ordering */
+#node-417-588 { z-index: 4; }
+
+#node-417-606 { z-index: 1; }
+#node-444-24 { z-index: 2; }
+#node-417-595 { z-index: 3; }
+#node-417-590 { z-index: 4; }
+#node-417-588 { z-index: 5; }
+#node-417-582, #node-417-576, #node-417-570, #node-417-564, #node-417-558 { z-index: 6; }
+#node-417-583, #node-417-577, #node-417-571, #node-417-565, #node-417-559 { z-index: 7; }
+
+/* Accessibility */
+:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
