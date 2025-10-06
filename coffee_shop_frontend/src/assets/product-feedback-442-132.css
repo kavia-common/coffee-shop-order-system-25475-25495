@@ -1,0 +1,265 @@
+:root {
+  /* Colors from design system used by this screen */
+  --color-ffffff: #ffffff;
+  --color-1f2028: #1f2028;
+  --color-6851d1: #6851d1;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-ffffff);
+}
+
+.screen {
+  position: relative;
+  width: 1333px;
+  height: 998px;
+  background: var(--color-ffffff); /* style_5 background */
+  overflow: hidden;
+  font-family: 'Urbanist', 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--color-1f2028);
+}
+
+/* Global helpers */
+.container { position: absolute; display: block; }
+.text { display: inline-block; white-space: pre-wrap; }
+.rectangle { position: absolute; }
+.icon { position: absolute; display: block; }
+
+/* Typography mappings (resolved from design system) */
+.typo-97 { /* Urbanist 18/400 lh 21.6 color 1f2028 */
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-1f2028);
+}
+.typo-98 { /* Urbanist 18/400 center color 1f2028 */
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--color-1f2028);
+}
+.typo-99 { /* Urbanist 26/600 lh 31.2 color 1f2028 */
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31.2px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-1f2028);
+}
+.typo-100 { /* Poppins 18/300 lh 27 color 1f2028 */
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0.09px; /* per design system */
+  text-align: left;
+  color: var(--color-1f2028);
+}
+.typo-101 { /* Urbanist 24/700 lh 28.8 color 1f2028 */
+  font-family: 'Urbanist', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-1f2028);
+}
+.typo-103 { /* Urbanist 40/700 lh 60 color 1f2028 */
+  font-family: 'Urbanist', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-1f2028);
+}
+
+/* Stripe (style_121 background color_6851d1) */
+#node-442-163.stripe {
+  left: 0px;
+  top: 0px;
+  width: 1333px;
+  height: 8px;
+  background: var(--color-6851d1);
+}
+
+/* Studio Name container */
+#node-442-156.studio-name {
+  left: 112px;
+  top: 100px;
+  width: 1109px;
+  height: 24px;
+}
+#node-442-157.studio-text {
+  position: absolute;
+  left: 0px; top: 0px; width: 206px; height: 24px;
+}
+#node-442-158 {
+  position: absolute;
+  left: 0px; top: 1px; width: 96px; height: 22px;
+}
+#node-442-159.arrow-right {
+  position: absolute;
+  left: 100px; top: 0px; width: 24px; height: 24px;
+  background: var(--color-ffffff); /* style_5 applied on this frame in JSON */
+}
+#node-442-160.icon {
+  left: 6px;
+  top: 5.996px;
+  width: 11.995px;
+  height: 12.01px;
+}
+#node-442-161 {
+  position: absolute;
+  left: 128px; top: 1px; width: 78px; height: 22px;
+}
+#node-442-162 {
+  position: absolute;
+  right: 0px; top: 1px; width: 104px; height: 22px;
+}
+
+/* Headline & Logo */
+#node-442-151.headline-logo {
+  left: 112px;
+  top: 196px;
+  width: 1109px;
+  height: 122px;
+}
+#node-442-152.headline-text {
+  position: absolute;
+  left: 0px; top: 0px; width: 710px; height: 122px;
+}
+#node-442-153 {
+  position: absolute;
+  left: 0px; top: 0px; width: 176px; height: 60px;
+}
+#node-442-154 {
+  position: absolute;
+  left: 0px; top: 68px; width: 710px; height: 54px;
+}
+#node-442-155.logo {
+  position: absolute;
+  left: 1025px; /* 1137 - 112 */
+  top: 19px;   /* 215 - 196 */
+  width: 84px;
+  height: 84px;
+  border-radius: 16px; /* style_126 */
+  box-shadow: 0px 5px 35px rgba(31,32,40,1);
+}
+
+/* Image */
+#node-442-149.image-wrap {
+  left: 625px;
+  top: 350px;
+  width: 576px;
+  height: 576px;
+}
+#node-442-150.saly {
+  left: 0px; top: 0px;
+  width: 576px;
+  height: 576px;
+  object-fit: cover;
+}
+
+/* Detail */
+#node-442-137.detail {
+  left: 112px;
+  top: 414px;
+  width: 296px;
+  height: 154px;
+}
+#node-442-138 {
+  position: absolute;
+  left: 0px; top: 0px; width: 198px; height: 31px;
+}
+#node-442-139.form {
+  position: absolute;
+  left: 0px; top: 75px; /* 489 - 414 */
+  width: 296px;
+  height: 79px;
+}
+#node-442-140.feedback-icon {
+  position: absolute;
+  left: 0px; top: 0px; width: 79px; height: 79px;
+}
+#node-442-141.icon-bg {
+  left: 0px; top: 0px; width: 79px; height: 79px;
+}
+#node-442-142.icon-image {
+  position: absolute;
+  left: 13px; top: 13px; width: 54px; height: 54px;
+  background: #ffefe8; /* style_120 background */
+  border-radius: 30px; /* style_120 border_radius */
+  overflow: hidden;
+}
+#node-442-142.icon-image img {
+  display: block;
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+#node-442-143.icon-overlay {
+  left: 13px; top: 13px; width: 54px; height: 54px;
+  border-radius: 30px; /* style_111 border radius */
+  object-fit: contain;
+}
+#node-442-144.text-block {
+  position: absolute;
+  left: 103px; /* 215 - 112 */
+  top: 6px;   /* 495 - 489 */
+  width: 193px;
+  height: 67px;
+}
+#node-442-145.text-row {
+  position: absolute;
+  left: 0px; top: 0px; width: 83px; height: 29px;
+}
+#node-442-146 {
+  position: absolute;
+  left: 0px; top: 0px; width: 55px; height: 29px;
+}
+#node-442-147 {
+  position: absolute;
+  left: 59px; /* 274-215 */
+  top: 2.5px; /* 497.5 - 495 */
+  width: 24px; height: 24px;
+}
+#node-442-148.link {
+  position: absolute;
+  left: 0px; top: 45px; /* 540 - 495 */
+  width: 193px; height: 22px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+#node-442-148.link:hover {
+  border-bottom-color: currentColor;
+}
+
+/* Created by */
+#node-442-133.created-by {
+  left: 112px;
+  top: 902px;
+  width: 254px;
+  height: 24px;
+}
+#node-442-134 {
+  position: absolute;
+  left: 0px; top: 1px; width: 93px; height: 22px;
+}
+#node-442-135 {
+  position: absolute;
+  left: 101px; top: 0px; width: 24px; height: 24px;
+}
+#node-442-136 {
+  position: absolute;
+  left: 133px; top: 1px; width: 121px; height: 22px;
+}
