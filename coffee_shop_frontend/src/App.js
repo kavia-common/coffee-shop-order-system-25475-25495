@@ -13,6 +13,7 @@ import {
 import ProductFeedback from './pages/ProductFeedback';
 import Color from './pages/Color';
 import License from './pages/License';
+import AboutMe from './pages/AboutMe';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -50,6 +51,7 @@ function App() {
                     <Link className="App-link" to="/product-feedback">Product Feedback</Link>
                     <Link className="App-link" to="/color">Color</Link>
                     <Link className="App-link" to="/license">License</Link>
+                    <Link className="App-link" to="/about-me">About Me</Link>
                   </nav>
 
                   <img src={logo} className="App-logo" alt="logo" />
@@ -125,6 +127,25 @@ function App() {
                 }}
               >
                 <License />
+              </div>
+            }
+          />
+          <Route
+            path="/about-me"
+            element={
+              // Full-bleed container without the default header
+              <div
+                style={{
+                  minHeight: '100vh',
+                  overflowX: 'auto',
+                  overflowY: 'auto',
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                  justifyContent: 'flex-start',
+                  background: 'var(--bg-primary, #ffffff)',
+                }}
+              >
+                <AboutMe />
               </div>
             }
           />
