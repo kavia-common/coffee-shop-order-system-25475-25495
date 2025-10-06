@@ -12,6 +12,7 @@ import {
 
 import ProductFeedback from './pages/ProductFeedback';
 import Color from './pages/Color';
+import License from './pages/License';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -48,6 +49,7 @@ function App() {
                   <nav style={{ position: 'absolute', top: 20, left: 20, display: 'flex', gap: 12 }}>
                     <Link className="App-link" to="/product-feedback">Product Feedback</Link>
                     <Link className="App-link" to="/color">Color</Link>
+                    <Link className="App-link" to="/license">License</Link>
                   </nav>
 
                   <img src={logo} className="App-logo" alt="logo" />
@@ -104,6 +106,25 @@ function App() {
                 }}
               >
                 <Color />
+              </div>
+            }
+          />
+          <Route
+            path="/license"
+            element={
+              // Full-bleed container without the default header
+              <div
+                style={{
+                  minHeight: '100vh',
+                  overflowX: 'auto',
+                  overflowY: 'auto',
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                  justifyContent: 'flex-start',
+                  background: 'var(--bg-primary, #ffffff)',
+                }}
+              >
+                <License />
               </div>
             }
           />

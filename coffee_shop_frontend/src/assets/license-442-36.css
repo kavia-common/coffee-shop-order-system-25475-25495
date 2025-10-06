@@ -1,0 +1,250 @@
+:root {
+  /* Colors from design system */
+  --color-ffffff: #ffffff;
+  --color-1f2028: #1f2028;
+  --color-6851d1: #6851d1;
+  --color-ff4423: #ff4423;
+  --color-f3f5f7: #f3f5f7;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-ffffff);
+}
+
+.screen {
+  position: relative;
+  width: 1333px;
+  height: 998px;
+  background: var(--color-ffffff);
+  overflow: hidden;
+  font-family: 'Urbanist', 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--color-1f2028);
+}
+
+/* Global helpers */
+.container { position: absolute; display: block; }
+.text { display: inline-block; white-space: pre-wrap; }
+.rectangle { position: absolute; }
+.icon { position: absolute; display: block; }
+
+/* Typography mappings from design system */
+.typo-97 {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-1f2028);
+}
+
+.typo-98 {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--color-1f2028);
+}
+
+.typo-99 {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31.2px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-1f2028);
+}
+
+.typo-100 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0.09px;
+  text-align: left;
+  color: var(--color-1f2028);
+}
+
+.typo-101 {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-1f2028);
+}
+
+.typo-102 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+  text-align: left;
+  color: var(--color-1f2028);
+}
+
+.typo-103 {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--color-1f2028);
+}
+
+/* Stripe */
+#node-442-86.stripe {
+  left: 0;
+  top: 0;
+  width: 1333px;
+  height: 8px;
+  background: var(--color-6851d1);
+}
+
+/* Studio Name */
+#node-442-79.studio-name {
+  left: 112px;
+  top: 100px;
+  width: 1109px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#node-442-80.text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#node-442-82.arrow-right {
+  width: 24px;
+  height: 24px;
+  background: var(--color-ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#node-442-83.icon {
+  width: 11.995px;
+  height: 12.01px;
+}
+
+/* Headline & Logo */
+#node-442-74.headline-logo {
+  left: 112px;
+  top: 196px;
+  width: 1109px;
+  height: 95px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#node-442-75.text {
+  width: 710px;
+  height: 95px;
+}
+
+#node-442-78.logo {
+  width: 84px;
+  height: 84px;
+  margin-top: 5.5px;
+  border-radius: 16px;
+  box-shadow: 0px 5px 35px rgba(31,32,40,1);
+}
+
+/* Detail Agreement */
+#node-442-43.detail-agreement {
+  left: 112px;
+  top: 355px;
+  width: 750px;
+  height: 384px;
+}
+
+#node-442-44.text {
+  margin-bottom: 44px;
+}
+
+/* You can/can't sections */
+.you-can,
+.you-cant {
+  margin-bottom: 32px;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  height: 24px;
+}
+
+.point-list {
+  margin-top: 24px;
+}
+
+.header-emoji {
+  margin-left: 4px;
+}
+
+/* Fix precise spacing as per JSON */
+#node-442-49 {
+  margin-bottom: 24px;
+}
+
+#node-442-60 {
+  margin-bottom: 24px;
+}
+
+.x-icon {
+  width: 24px;
+  height: 24px;
+  background: var(--color-ff4423);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-outline {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image */
+#node-442-41.image {
+  left: 693px;
+  top: 350px;
+  width: 576px;
+  height: 576px;
+}
+
+#node-442-42.saly {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Created by */
+#node-442-37.created-by {
+  left: 112px;
+  top: 902px;
+  width: 254px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
